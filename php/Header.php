@@ -37,13 +37,30 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['action']) && $_POST['a
                 <!-- Navbar Middle-Part -->
                 <?php if($user_role == 'Admin'): ?>
                     <ul class="nav col-12 col-md-auto justify-content-center mb-md-0 text-white">
-                        <li><a href="#" class="nav-link">New Course</a></li>
-                        <li><a href="AddAdmin.php" class="nav-link">New Admin</a></li>
+                    <li class="nav-item dropdown">
+                        <button class="btn ad" style = "background-color:black;" data-bs-toggle="dropdown" aria-expanded="false">
+                            Courses
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Add New</a></li>
+                            <li><a class="dropdown-item" href="#">Existing</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <button class="btn ad" style = "background-color:black;" data-bs-toggle="dropdown" aria-expanded="false">
+                            Admins
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="AddAdmin.php">Add New</a></li>
+                            <li><a class="dropdown-item" href="ExistingAdmins.php">Existing</a></li>
+                        </ul>
+                    </li>
+                        
                     </ul>
                 <?php else: ?>
                     <ul class="nav col-12 col-md-auto justify-content-center mb-md-0 text-white">
-                        <li><a href="Home.php" class="nav-link">Home</a></li>
-                        <li><a href="#" class="nav-link">About</a></li>
+                        <li><a href="Home.php" class="link">Home</a></li>
+                        <li><a href="#" class="link">About</a></li>
                     </ul>
                 <?php endif; ?> 
 
@@ -69,5 +86,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['action']) && $_POST['a
     </div>
     <script src="../Bootstrap/bootstrap.bundle.min.js"></script>
     <script src="../javascript/Header.js"></script>
+    <div class = "container"id="alertContainer"></div>
 </body>
 </html>

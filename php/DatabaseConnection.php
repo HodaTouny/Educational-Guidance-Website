@@ -42,7 +42,31 @@ class database{
             return "";
         }
     }
+
+
+
+    public function getAllAdmins(){
+        $query = "SELECT * FROM users WHERE user_type = 'Admin'";
+        $result = mysqli_query($this->conn, $query);
+        return $result;
+
+    }
+
+    function deleteUserByEmail($email) {
+        $query = "DELETE FROM users WHERE email = '$email'";
+        $result = mysqli_query($this->conn, $query);
+        if ($result) {
+            if (mysqli_affected_rows($this->conn) > 0) {
+                return 1;
+            } else {
+                return 0;
+            }
+        } else {
+            return 0;
+        }
+    }
     
+
     public function __destruct(){
         if ($this->conn) {
             $this->conn->close();

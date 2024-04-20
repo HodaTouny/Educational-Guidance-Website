@@ -17,7 +17,6 @@ if(isset($_GET['type'])) {
 </head>
 <body>
     <div class="container" style="margin-bottom: 4rem;">
-    <div id="alertContainer"></div>
         <div class="row">
             <div class="col-md-6 d-flex justify-content-center align-items-center">
                 <div class="img">

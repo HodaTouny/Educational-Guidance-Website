@@ -14,7 +14,6 @@ if(isset($_SESSION['user_role'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<div id="alertContainer"></div>
 <div class="container py-4">
         <div class="text-center py-">
         <?php if($user_role == 'guest'): ?>

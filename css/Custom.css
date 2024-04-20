@@ -11,14 +11,39 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.247);
     
 }
-/* -------------------------------------------- For Header -------------------------------------------------------------- */
 
-.nav-link{
+/* -------------------------------------------- For Header -------------------------------------------------------------- */
+.ad{
     color: white;
+    text-decoration: none;
+    margin: 0 10px 0 10px;
 }
-.nav-link:hover{
+
+.ad:hover {
+    color: #8eb2d1; 
+    text-decoration: none; 
+    margin: 0 10px 0 10px;
+  }
+
+  .ad:hover::after {
     color: #8eb2d1;
-    border-bottom: #8eb2d1 0.5px solid;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin: 0 10px 0 10px;
+  }
+
+.link{
+    color: white;
+    text-decoration: none;
+    margin: 0 10px 0 10px;
+}
+.link:hover{
+    color: #8eb2d1;
+    border-bottom: #8eb2d1 1px solid;
+    text-decoration: none; 
+    margin: 0 10px 0 10px;
 
 }
 

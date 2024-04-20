@@ -6,7 +6,7 @@ include 'AuthunticationController.php';
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Authentication</title>
+    <title>Add New Admin</title>
     <script src="../javascript/Form.js"></script>
 
 </head>
