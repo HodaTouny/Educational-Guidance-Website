@@ -1,0 +1,54 @@
+/* -------------------------------------------- For ALL page -------------------------------------------------------------- */
+.custombtn{
+    background-color: #ACD3F6;
+    color: #000;
+    border-color: #ACD3F6;
+}
+.custombtn:hover, .custombtn:active{
+    background-color: #85a4c0;
+    color: #000;
+    border-color: #7490a8;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.247);
+    
+}
+/* -------------------------------------------- For Header -------------------------------------------------------------- */
+
+.nav-link{
+    color: white;
+}
+.nav-link:hover{
+    color: #8eb2d1;
+    border-bottom: #8eb2d1 0.5px solid;
+
+}
+
+.login:hover{
+    background-color: rgb(238, 238, 238);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.247);
+}
+
+.name{
+    background-color: #ACD3F6;
+    color: black;
+    font-weight:500;
+    font-size: large;
+    border-radius: 10px;
+    border-color: #ACD3F6;
+}
+.name:hover{
+    background-color: #85a4c0;
+    color: black;
+    font-size: large;
+    font-weight:500;
+    border-radius: 10px;
+    border-color: #85a4c0;;
+}
+
+/* -------------------------------------------- Home page -------------------------------------------------------------- */
+.background-image-overlay {
+    background-image: url('../Assets/back.png');
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
