@@ -10,8 +10,9 @@ Guidcate is an educational guidance website aimed at helping students find cours
 - **Course Enrollment**: Students can browse available courses and enroll in the ones they are interested in.
 
 ### For Admins
-- **Add New Admin**: Superadmins can add new administrators to manage the platform.
-- **Delete Admin**: Superadmins can remove existing administrators.
+- **Admin Management**:
+  - **Add New Admin**: Superadmins can add new administrators to manage the platform.
+  - **Delete Admin**: Superadmins can remove existing administrators.
 - **Course Management**:
   - **Add New Course**: Admins can add new courses to the platform.
   - **Delete Course**: Admins can remove existing courses from the platform.
